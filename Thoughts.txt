@@ -1,0 +1,14 @@
+- Create the updated_at and created_at fields using a trait => i think this is okay for now
+
+- Create the relationship between the entities
+
+- Configure the doctrine to use sqlite instead if mysql
+
+- To make the example more interesting i might try to allow the user to remove his feedback and only HIS
+    based on the IP address,
+       - i might need to to store the addresse ip in the DB
+
+       Ok not doing this anymore it could take a lot longer than i thought, instead ill add the item to the wish list and it will be removed if it's already there
+       which means the button will toggle state based on the item being in the list or not
+        In the DB i'll need a wishlist table which will have the follwing relationships:
+        * ManyToMany() product and wishlist
